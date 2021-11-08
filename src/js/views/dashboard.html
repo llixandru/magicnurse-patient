@@ -1,0 +1,51 @@
+<!--
+ Copyright (c) 2014, 2021, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-applayout-page">
+    <div class="oj-applayout-fixed-top">
+        <!--
+       ** Oracle JET V11.1.0 hybrid mobile application header pattern.
+       ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+       ** more information on how to use this pattern.
+    -->
+        <header role="banner" class="oj-hybrid-applayout-header">
+            <oj-module config="[[headerConfig]]"></oj-module>
+        </header>
+    </div>
+    <!-- This is where your main page content will be loaded -->
+    <div class="oj-applayout-content">
+        <div role="main" class="oj-hybrid-applayout-content">
+            <div class="oj-hybrid-padding">
+                <div>
+                    <h2 style="color: black;"><span class="mn-hospital"></span> Today</h2>
+                    <div class="mn-medicine-list">
+                        <oj-list-view id="listview1" aria-label="simple list" data="[[dataProviderMedicine]]" class="oj-listview-item-padding-off">
+                            <template slot="itemTemplate" data-oj-as="item">
+                        <oj-list-item-layout>
+                            <span class="oj-typography-body-md oj-text-color-primary"><oj-bind-text value="[[item.data.name]]"></oj-bind-text></span>
+                            <oj-avatar slot="leading" size="xs" src="[[item.data.image]]"></oj-avatar> 
+                            <span slot="secondary" class="oj-typography-body-sm oj-text-color-secondary"><oj-bind-text value="[[item.data.title]]"></oj-bind-text></span>
+                            <span slot="tertiary" class="oj-typography-body-sm oj-text-color-secondary"><oj-bind-text value="[[item.data.schedule]]"></oj-bind-text></span>
+                        </oj-list-item-layout>
+                    </template>
+                        </oj-list-view>
+                    </div>
+                    <h2 style="color: black;"><span class="mn-test"></span> Upcoming tests</h2>
+                    <div class="mn-medicine-list">
+                        <oj-list-view id="listview2" aria-label="simple list" data="[[dataProvidertomorrow]]" class="oj-listview-item-padding-off">
+                            <template slot="itemTemplate" data-oj-as="item">
+                    <oj-list-item-layout>
+                        <span class="oj-typography-body-md oj-text-color-primary"><oj-bind-text value="[[item.data.name]]"></oj-bind-text></span>
+                        <oj-avatar slot="leading" size="xs" src="[[item.data.image]]"></oj-avatar> 
+                        <span slot="secondary" class="oj-typography-body-sm oj-text-color-secondary"><oj-bind-text value="[[item.data.title]]"></oj-bind-text></span>
+                    </oj-list-item-layout>
+                </template>
+                        </oj-list-view>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

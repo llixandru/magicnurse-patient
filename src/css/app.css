@@ -1,0 +1,166 @@
+/*
+    Document   : override
+    Created on : <date>
+    Author     : <author>
+    Description:
+        This is where any of your application specific styles should be included
+*/
+
+
+/* Hides the content area until we are ready to display after paddings have been adjusted. 
+    oj-complete is a marker class that is applied by the appController 
+    after adjusting the content area. */
+
+.oj-applayout-content:not(.oj-complete) {
+    visibility: hidden;
+}
+
+.demo-james-icon {
+    width: 80px;
+    height: 80px;
+    display: block;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.demo-profile-name {
+    font-size: 1.714rem;
+    text-align: center;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 42px;
+}
+
+.demo-app-name {
+    padding-top: 40px;
+    color: #979899;
+}
+
+.sendOffScreen {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+}
+
+.mn-username {
+    margin-bottom: 20px;
+}
+
+.mn-login-form {
+    margin-top: 200px;
+}
+
+.oj-hybrid-applayout-page {
+    background-image: url('images/AdobeStock_377611105.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -10em;
+}
+
+.mn-login-bg {
+    background-image: url('images/AdobeStock_400956413.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+}
+
+.oj-applayout-content {
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.mn-test::before {
+    content: url('images/test-tube-3.png');
+}
+
+.mn-pills::before {
+    content: url('images/capsule.png');
+}
+
+.mn-medicine::before {
+    content: url('images/medicine-bottle-4.png');
+}
+
+.mn-hospital::before {
+    content: url('images/hospital-3.png');
+}
+
+.mn-virus::before {
+    content: url('images/virus-4.png');
+}
+
+.mn-medical-report::before {
+    content: url('images/medical-report.png');
+}
+
+.mn-testtube::before {
+    content: url('images/test-tube-4.png');
+}
+
+.mn-infusion::before {
+    content: url('images/infusion.png');
+}
+
+.mn-blood::before {
+    content: url('images/blood-bank-3.png');
+}
+
+
+/* .oj-hybrid-applayout-page::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.25);
+}
+
+.mn-login-bg::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-color: rgba(255, 255, 255, 0.25);
+} */
+
+.mn-login-title {
+    margin-top: 150px;
+    color: black;
+}
+
+.mn-login-button {
+    margin-top: 50px;
+}
+
+.mn-button-blue {
+    background-color: rgba(36, 126, 243);
+    color: white;
+    width: 15em;
+    border-radius: .7em;
+}
+
+.mn-medicine-list {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: .7em;
+}
+
+.oj-hybrid-applayout-header {
+    background: none;
+    border: none;
+}
+
+.oj-ux-icon,
+[class*="oj-ux-"],
+[class^="oj-ux-"] {
+    font-size: 30px;
+}

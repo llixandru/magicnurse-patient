@@ -1,0 +1,39 @@
+<!--
+ Copyright (c) 2014, 2021, Oracle and/or its affiliates.
+ Licensed under The Universal Permissive License (UPL), Version 1.0
+ as shown at https://oss.oracle.com/licenses/upl/
+ -->
+<div class="oj-hybrid-applayout-page">
+    <div class="oj-applayout-fixed-top">
+        <!--
+       ** Oracle JET V11.1.0 hybrid mobile application header pattern.
+       ** Please see the Oracle JET Cookbook App Shell: Hybrid Mobile demos for
+       ** more information on how to use this pattern.
+    -->
+        <header role="banner" class="oj-hybrid-applayout-header">
+            <oj-module config="[[headerConfig]]"></oj-module>
+        </header>
+    </div>
+    <!-- This is where your main page content will be loaded -->
+    <div class="oj-applayout-content">
+        <div role="main" class="oj-hybrid-applayout-content">
+            <div class="oj-hybrid-padding">
+                <div class="mn-medicine-list">
+                    <h2> <span class="mn-virus"></span> Ask for a refill</h2>
+                    <oj-input-text label-hint="Social Security Number" value="[[ssn]]" disabled></oj-input-text>
+                    <oj-input-text label-hint="Prescription ID" value="[[prescription_id]]" disabled></oj-input-text>
+                    <oj-input-text label-hint="Refill Store" value="[[refill_store]]"></oj-input-text>
+                    <oj-input-text label-hint="Refill Status" value="[[refill_status]]"></oj-input-text>
+                    <oj-input-text label-hint="Refill Date" value="[[refill_date]]"></oj-input-text>
+                    <div class="oj-flex oj-sm-justify-content-center" style="margin-top: 50px;">
+                        <oj-button id='update' class='mn-button-blue' chroming='solid' on-oj-action="[[askRefill]]">
+                            <span style="color: white; font-size: 20px;">Refill
+              </span>
+                        </oj-button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
